@@ -31,7 +31,7 @@ class Apis {
         pushToken: '');
 
     return await firestore
-        .collection('user')
+        .collection('users')
         .doc(user.uid)
         .set(chatUser.toJson());
   }
